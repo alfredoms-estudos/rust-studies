@@ -124,3 +124,17 @@ Caso seja um literal que possa ser de diversos tipos, pode-se usar um sufixo com
 <br>
 
 **Tipos de Ponto Flutuante**
+
+**Rust** tem dois tipos de ponto flutuante: **f32** e **f64**, que possuem tamanho de **32** e **64 bits**, respectivamente. Os dois tipos são *signed* - isso é, podem ser negativos. O padrão é o f64, pois na maioria dos processadores modernos eles tem a mesma velocidade, mas o dobro da precisão.
+
+**Tipo Boleano**
+
+Tipos boleanos podem ser definidos com a palavra reservada **bool**, podem ser **true** ou **false** e tem *um byte de tamanho*.
+
+**O tipo caractere**
+
+O `char` é o tipo alfabético mais primitivo disponível em **Rust**. Deve ser especificado com aspas simples, diferente de `string literals`, que usa aspas duplas.
+
+Um `char` possui **4 bytes** de tamanho e representa um `Unicode Scalar Value`, o que significa que pode armazenar muito mais do que apenas **ASCII**. Letras acentuadas; Chinês, Japonês e caracteres Coreanos; emojis; e espaços com tamanho zero são todos válidos usando o `char` disponível em **Rust**.
+
+
